@@ -97,7 +97,7 @@ optional = false
 python-versions = "*"
 
 [package.extras]
-test = ["hypothesis (==3.55.3)", "flake8 (==3.7.8)"]
+test = ["flake8 (==3.7.8)", "hypothesis (==3.55.3)"]
 
 [[package]]
 name = "cryptography"
@@ -352,6 +352,18 @@ unidecode = ">=1.1"
 markdown = ["markdown (>=3.1)"]
 
 [[package]]
+name = "pillow"
+version = "9.4.0"
+description = "Python Imaging Library (Fork)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline-tabs", "sphinx-issues (>=3.0.1)", "sphinx-removed-in", "sphinxext-opengraph"]
+tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
+
+[[package]]
 name = "pluggy"
 version = "1.0.0"
 description = "plugin and hook calling mechanisms for python"
@@ -360,8 +372,8 @@ optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-testing = ["pytest-benchmark", "pytest"]
-dev = ["tox", "pre-commit"]
+dev = ["pre-commit", "tox"]
+testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
 name = "py"
@@ -559,6 +571,18 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "waitress"
+version = "2.1.2"
+description = "Waitress WSGI server"
+category = "main"
+optional = false
+python-versions = ">=3.7.0"
+
+[package.extras]
+docs = ["Sphinx (>=1.8.1)", "docutils", "pylons-sphinx-themes (>=1.0.9)"]
+testing = ["pytest", "pytest-cover", "coverage (>=5.0)"]
+
+[[package]]
 name = "werkzeug"
 version = "2.2.2"
 description = "The comprehensive WSGI web application library."
@@ -612,7 +636,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f6fa001fd730062676ff4442c758e2c14050ce3cc2e52e8ac2d73634b09af0ee"
+content-hash = "27950981086293cc265f3dee4cd479602902252f96f5e25c43eec3497618a105"
 
 [metadata.files]
 attrs = []
@@ -643,6 +667,7 @@ packaging = []
 paramiko = []
 pathlib2 = []
 pelican = []
+pillow = []
 pluggy = []
 py = []
 pycparser = []
@@ -663,6 +688,7 @@ typing-extensions = []
 typogrify = []
 unidecode = []
 urwid = []
+waitress = []
 werkzeug = []
 zipp = []
 "zope.event" = []
